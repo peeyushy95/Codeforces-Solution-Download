@@ -4,7 +4,6 @@ import json
 import urllib
 from Tkinter import *
 
-
 html_replace = { '&lt;' : '<' , '&gt;' : '>' , '&amp;' : '&' , '&quot;' : '\"' , "&apos;" : "'" , '\r' : '' }
 languages    = { 'Python' : '.py' , 'C' : '.c', 'Java' : '.java' , 'C#' : '.cs' }
 
