@@ -93,6 +93,7 @@ def html_handle(code_raw):
 
     for raw_data in html_replace :
             code_raw = code_raw.replace(raw_data, html_replace[raw_data])
+    
     return code_raw
 
 
@@ -102,6 +103,7 @@ def save_code(contest_id,problem_index,problem_name,code,problem_extension):
 
     if not os.path.exists(base_path):
         os.mkdir(base_path)
+
 
     file = open(base_path + '/' + problem_name + '(' + problem_index + ')' + problem_extension,'w')    
     file.write(code)
